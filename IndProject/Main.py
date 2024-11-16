@@ -13,7 +13,7 @@ st.markdown(
     <div style="text-align: center;">
         <h1>Machine Learning II Individual Project </h1>
         <h1>California Housing Market Artificial Neural Network</h1>
-        <h3>Delivery Date: November 17, 2024</h3>
+        <h3>Date: November 17, 2024</h3>
     </div>
     """,
     unsafe_allow_html=True
