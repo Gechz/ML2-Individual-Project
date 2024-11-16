@@ -3,9 +3,18 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from math import sqrt
-from sklearn.metrics import mean_squared_error, mean_absolute_error
+from sklearn.metrics import mean_squared_error, mean_absolute_error, mean_absolute_percentage_error
 
 def ann_model_result():
+    st.header("Overall Insights")
+    st.markdown("""
+    - The Training and Validation loss graphs shows that overfitting was prevented before running 40 epochs.
+    - The number of hidden layer nodes can influence forecasting power, but increasing this will harm computational power.
+    - Error Metrics show a solid model, but still with room for improvement.
+    - Improvements:
+        - Add other categorical features such as location to improve forecasting power.
+        - Add other numeric features such as number of floors.
+    """)
     # Subheader for the loss plot
     st.subheader("Training and Validation Loss")
     st.markdown("""
@@ -61,7 +70,7 @@ def ann_model_result():
     """)
     st.image("IndProject/test_results.png")  # Replace with the correct path to your image
     st.code("""
-    from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+    from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, mean_absolute_percentage_error
     from math import sqrt
     # Generate predictions on the test data
     y_test_predict = model1.predict(X_test)
@@ -77,9 +86,10 @@ def ann_model_result():
     MSE_test = round(mean_squared_error(y_test_orig, y_test_predict_orig), 2)
     MAE_test = round(mean_absolute_error(y_test_orig, y_test_predict_orig), 2)
     R2_test = round(r2_score(y_test_orig, y_test_predict_orig), 3)
+    MAPE_test = round(mean_absolute_percentage_error(y_test_orig,y_test_predict_orig),3)
 
     print("TEST RESULTS")
-    print('RMSE =', RMSE_test, '\nMSE =', MSE_test, '\nMAE =', MAE_test, '\nR2 =', R2_test)
+    print('RMSE =', RMSE_test, '\nMSE =', MSE_test, '\nMAE =', MAE_test, '\nR2 =', R2_test, '\MAPE = ', MAPE_test)
     """)
 
     # Subheader for train set error metrics
@@ -89,7 +99,7 @@ def ann_model_result():
     """)
     st.image("IndProject/train_results.png")  # Replace with the correct path to your image
     st.code("""
-    from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+    from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, mean_absolute_percentage_error
     from math import sqrt
 
     # Generate predictions on the training data
@@ -106,9 +116,10 @@ def ann_model_result():
     MSE_train = round(mean_squared_error(y_train_orig, y_train_predict_orig), 2)
     MAE_train = round(mean_absolute_error(y_train_orig, y_train_predict_orig), 2)
     R2_train = round(r2_score(y_train_orig, y_train_predict_orig), 3)
+    MAPE_train = round(mean_absolute_percentage_error(y_train_orig,y_train_predict_orig),3)
 
     print("TRAIN RESULTS")
-    print('RMSE =', RMSE_train, '\nMSE =', MSE_train, '\nMAE =', MAE_train, '\nR2 =', R2_train)
+    print('RMSE =', RMSE_train, '\nMSE =', MSE_train, '\nMAE =', MAE_train, '\nR2 =', R2_train, '\MAPE = ', MAPE_test)
     """)
 
     # Main Insights section
@@ -116,6 +127,7 @@ def ann_model_result():
     st.markdown("""
     - Overfitting was prevented after 35 epochs, as indicated by the convergence of the training and validation loss curves.
     - The error metrics (RMSE, MSE, and MAE) indicate a solid model performance.
+    - The MAPE error sits between 20-30% which presents a reliable forecast power.
     - The R² score sits at a respectable 70%, showing that the model explains a significant portion of the variance in the target variable.
     """)
 
