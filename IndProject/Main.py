@@ -26,7 +26,7 @@ st.header("Project Owner")
     
     # Define team members with specific images and roles
 team_data = [
-        {"name": "Gabriel Chapman", "Section": "Section A-1"}
+        {"name": "Gabriel Chapman", "Section": "Section A-1","Nationality": "Panama City, Panama"}
     ]
     
     # Display each team member in a larger format
@@ -37,6 +37,7 @@ for member in team_data:
     with col2:
         st.subheader(member["name"])
         st.write(member["Section"])
+        st.write(member['Nationality']
 
 
 # Pages in the side
