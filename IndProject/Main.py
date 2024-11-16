@@ -40,7 +40,6 @@ for member in team_data:
 # Pages in the side
 pages = [
     ("Cover Page", "Main"),
-    ("Introduction", "1_README"),
     ("EDA","2_Exploratory Data Analysis"),
     ("Setup", "3_Artificial Neural Network Setup"),
     ("Model Result", "4_ANN Model Result"),
