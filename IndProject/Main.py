@@ -3,6 +3,9 @@ import importlib.util
 from pathlib import Path
 import os
 
+
+# Set up the app layout and default page configuration
+st.set_page_config(page_title="Machine Learning II Individual Project", layout="wide")
 # Print current working directory
 st.write(print("Current working directory:", os.getcwd()))
 
@@ -10,8 +13,7 @@ st.write(print("Current working directory:", os.getcwd()))
 st.write(print("Files in current directory:", os.listdir(".")))
 
 
-# Set up the app layout and default page configuration
-st.set_page_config(page_title="Machine Learning II Individual Project", layout="wide")
+
 
 # Display the main page content with a centered title and delivery date
 st.markdown(
