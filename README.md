@@ -46,7 +46,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository** and navigate to the project directory.
 2. **Place the following files** in the directory:
-   - `model.keras`: The pre-trained Keras model.
+   - `model1.keras`: The pre-trained Keras model.
    - `scaler_x.pkl`: The standard scaler for the input features.
    - `scaler_y.pkl`: The standard scaler for the target variable.
 3. **Install the required libraries**:
@@ -54,7 +54,7 @@ Ensure you have the following installed:
    pip install -r requirements.txt
 4. **Run the Streamlit app**:
    ```bash
-   streamlit run app.py
+   streamlit run Main.py
 
 
 The app prompts the user for the following inputs:
