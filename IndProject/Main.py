@@ -6,14 +6,6 @@ import os
 
 # Set up the app layout and default page configuration
 st.set_page_config(page_title="Machine Learning II Individual Project", layout="wide")
-# Print current working directory
-st.write(print("Current working directory:", os.getcwd()))
-
-# List all files in the current directory to ensure the image is there
-st.write(print("Files in current directory:", os.listdir(".")))
-
-
-
 
 # Display the main page content with a centered title and delivery date
 st.markdown(
