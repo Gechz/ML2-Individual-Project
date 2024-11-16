@@ -37,7 +37,7 @@ for member in team_data:
     with col2:
         st.subheader(member["name"])
         st.write(member["Section"])
-        st.write(member['Nationality']
+        st.write(member['Nationality'])
 
 
 # Pages in the side
