@@ -89,7 +89,7 @@ def ann_model_result():
     MAPE_test = round(mean_absolute_percentage_error(y_test_orig,y_test_predict_orig),3)
 
     print("TEST RESULTS")
-    print('RMSE =', RMSE_test, '\nMSE =', MSE_test, '\nMAE =', MAE_test, '\nR2 =', R2_test, '\MAPE = ', MAPE_test)
+    print('RMSE =', RMSE_test, '\nMSE =', MSE_test, '\nMAE =', MAE_test, '\nR2 =', R2_test, '\nMAPE = ', MAPE_test)
     """)
 
     # Subheader for train set error metrics
@@ -119,7 +119,7 @@ def ann_model_result():
     MAPE_train = round(mean_absolute_percentage_error(y_train_orig,y_train_predict_orig),3)
 
     print("TRAIN RESULTS")
-    print('RMSE =', RMSE_train, '\nMSE =', MSE_train, '\nMAE =', MAE_train, '\nR2 =', R2_train, '\MAPE = ', MAPE_test)
+    print('RMSE =', RMSE_train, '\nMSE =', MSE_train, '\nMAE =', MAE_train, '\nR2 =', R2_train, '\nMAPE = ', MAPE_train)
     """)
 
     # Main Insights section
