@@ -81,4 +81,3 @@ Output
 Notes
 - Ensure that the `model.keras` and `scaler` files are in the correct format and placed in the working directory.
 - The prediction model is optimized for the columns mentioned and may not generalize to other datasets without retraining.
-    """)
