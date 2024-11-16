@@ -54,6 +54,9 @@ Three callbacks were implemented to enhance training and prevent overfitting:
    history = model1.fit(X_train_full, y_train_full, epochs=100,
                      validation_split=0.3,
                      callbacks=[checkpoint_cb, early_stopping_cb, tensorboard_cb])
+## Results
+Outside of the notebook, the prediction app consider the time nuance since this data is from 1990 and applies a multiplying factor to estimate the price of the house for the year 2024.
+
 ## Insights and Analysis
 
 ### Training and Validation Loss
