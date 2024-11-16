@@ -68,7 +68,7 @@ def ann_model_result():
     st.markdown("""
     The table below displays the evaluation metrics for the test set, including R quared (R^2), Root Mean Squared Error (RMSE), Mean Squared Error (MSE), and Mean Absolute Error (MAE). These metrics provide insights into the model's prediction accuracy on unseen data.
     """)
-    st.image("IndProject/test_results.png")  # Replace with the correct path to your image
+    #st.image("IndProject/test_results.png")  # Replace with the correct path to your image
     st.code("""
     from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, mean_absolute_percentage_error
     from math import sqrt
@@ -97,7 +97,7 @@ def ann_model_result():
     st.markdown("""
     The train set metrics provide an understanding of how well the model performs on the training data. This can help to identify if the model has overfit the data or is generalizing well.
     """)
-    st.image("IndProject/train_results.png")  # Replace with the correct path to your image
+    #st.image("IndProject/train_results.png")  # Replace with the correct path to your image
     st.code("""
     from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, mean_absolute_percentage_error
     from math import sqrt
@@ -122,6 +122,18 @@ def ann_model_result():
     print('RMSE =', RMSE_train, '\nMSE =', MSE_train, '\nMAE =', MAE_train, '\nR2 =', R2_train, '\nMAPE = ', MAPE_train')
     """)
 
+
+    # Creating the dataframe for the table data
+    data = {
+        "Metrics": ["RMSE", "MSE", "MAE", "R2", "MAPE"],
+        "Train Results": [596.72, 356070.36, 436.31, 0.73, 0.252],
+        "Test Results": [620.05, 384467.41, 447.14, 0.704, 0.266]
+    }
+    
+    df = pd.DataFrame(data)
+
+# Displaying the table with streamlit functions
+st.dataframe(df)
     # Main Insights section
     st.subheader("Main Insights")
     st.markdown("""
