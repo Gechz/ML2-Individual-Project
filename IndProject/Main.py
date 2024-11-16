@@ -20,7 +20,7 @@ st.markdown(
 )
 
 st.markdown("For more information about implementation, check README file in the corresponding [GitHub repo](https://github.com/Gechz/ML2-Individual-Project/tree/main).")
-st.markdown("General thought process is laid out in the different pages. For more details, head to the [`Chain_of_Thought`document](https://github.com/Gechz/ML2-Individual-Project/blob/main/IndProject/Chain_of_Thought.md) in the corresponding [Github repo](https://github.com/Gechz/ML2-Individual-Project/tree/main).")
+st.markdown("General thought process is laid out in the different pages. For more details, head to the [`Chain_of_Thought`](https://github.com/Gechz/ML2-Individual-Project/blob/main/IndProject/Chain_of_Thought.md) document in the corresponding [Github repo](https://github.com/Gechz/ML2-Individual-Project/tree/main).")
  # Team Members Section
 st.header("Project Owner")
     
