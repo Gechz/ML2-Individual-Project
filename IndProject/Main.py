@@ -19,6 +19,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown("For more information about implementation, check README file in the corresponding GitHub repo.")
+st.markdown("General thought process is laid out in the different pages. For more details, head to the `Chain_of_Thought`document in the corresponding Github repo.")
  # Team Members Section
 st.header("Project Owner")
     
