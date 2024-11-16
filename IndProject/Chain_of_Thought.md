@@ -55,7 +55,8 @@ Three callbacks were implemented to enhance training and prevent overfitting:
                      validation_split=0.3,
                      callbacks=[checkpoint_cb, early_stopping_cb, tensorboard_cb])
 ## Results
-Outside of the notebook, the prediction app consider the time nuance since this data is from 1990 and applies a multiplying factor to estimate the price of the house for the year 2024.
+- When one inputs the features laid out (Population of block, Median Income of block, House Age, Average number of rooms, bedrooms and occupation) one gets the predicted value of the house.
+- Outside of the notebook, the prediction app consider the time nuance since this data is from 1990 and applies a multiplying factor to estimate the price of the house for the year 2024.
 
 ## Insights and Analysis
 
