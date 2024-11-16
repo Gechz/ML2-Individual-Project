@@ -1,6 +1,16 @@
 import streamlit as st
 import importlib.util
 from pathlib import Path
+import os
+
+# Print current working directory
+print("Current working directory:", os.getcwd())
+
+# List all files in the current directory to ensure the image is there
+print("Files in current directory:", os.listdir("."))
+
+# Attempt to display the image using the relative path
+st.image("path_to_gabriel.jpg", use_container_width=True)
 
 # Set up the app layout and default page configuration
 st.set_page_config(page_title="Machine Learning II Individual Project", layout="wide")
