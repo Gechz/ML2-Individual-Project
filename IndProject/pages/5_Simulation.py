@@ -29,9 +29,9 @@ def run_simulation():
     population = st.number_input('Population in the Block', min_value=50.0, max_value=50000.0, step=500.0, format="%.1f")
     
     house_age = st.slider('House Age', min_value=1, max_value=80, step=1, value=30)
-    ave_rooms = st.slider('Average Number of Rooms', min_value=1, max_value=20, step=1, value=5)
-    ave_bedrms = st.slider('Average Number of Bedrooms', min_value=1, max_value=35, step=1, value=1)
-    ave_occup = st.slider('Average Occupancy', min_value=1, max_value=40, step=1, value=3)
+    ave_rooms = st.slider('Number of Rooms', min_value=1, max_value=20, step=1, value=5)
+    ave_bedrms = st.slider('Number of Bedrooms', min_value=1, max_value=35, step=1, value=1)
+    ave_occup = st.slider('Occupancy Space', min_value=1, max_value=40, step=1, value=3)
 
     # Prepare input data
     input_data = pd.DataFrame({
