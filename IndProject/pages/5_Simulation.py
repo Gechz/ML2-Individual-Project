@@ -53,8 +53,16 @@ def run_simulation():
     # Ensure the prediction is non-negative and rounded
     final_prediction = max(0, round(prediction_rescaled[0][0]))
 
-    # Display the result
-    st.write(f'Predicted House Price: ${final_prediction:,}')
+    # Display the result in a larger font
+    st.markdown(f"<p style='font-size:24px;'>Predicted House Price in 1990: ${final_prediction:,}</p>", unsafe_allow_html=True)
+
+    st.header("Considerations for Growth of Housing Market:")
+    st.markdown("According to real estate trends, the average annual increase for California housing has varied, but has often ranged from about 3% to 7% per year, depending on market conditions.")
+    st.subheader("Multiplier to be applied: 5.52")
+
+    today_prediction = round(final_prediction * 5.52,2)
+    st.markdown(f"<p style='font-size:24px;'>Predicted House Price in 1990: ${today_prediction:,}</p>", unsafe_allow_html=True)
+
 
     # Display house style based on the house age
     if house_age < 10:
