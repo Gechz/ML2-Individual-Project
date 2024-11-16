@@ -132,8 +132,8 @@ def ann_model_result():
     
     df = pd.DataFrame(data)
 
-# Displaying the table with streamlit functions
-st.dataframe(df)
+    # Displaying the table with streamlit functions
+    st.dataframe(df)
     # Main Insights section
     st.subheader("Main Insights")
     st.markdown("""
