@@ -48,7 +48,7 @@ def ann_preparation():
 
     # Displaying Model Summary as Image
     st.text("Model Summary:")
-    st.image("pages/path_to_modelsumm.png")  # Replace this path with your image path if necessary
+    st.image("IndProject/path_to_modelsumm.png")  # Replace this path with your image path if necessary
 
     # Model Compilation
     st.subheader("Model Compilation")
