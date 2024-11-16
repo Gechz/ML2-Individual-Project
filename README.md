@@ -32,11 +32,15 @@ The target variable is a scalar value representing the **median house value for 
 
 Ensure you have the following installed:
 
-- **Python 3.x**
-- **Streamlit**
-- **TensorFlow**
-- **Pandas**
+- **streamlit**
+- **pandas**
+- **numpy**
+- **plotly**
+- **seaborn**
 - **scikit-learn**
+- **tensorflow**
+- **matplotlib**
+- **keras**
 
 ## How to Run the App Locally
 
