@@ -63,7 +63,7 @@ def run_simulation():
     st.subheader("Multiplier to be applied: 5.52")
 
     today_prediction = round(final_prediction * 5.52,2)
-    st.markdown(f"<p style='font-size:24px;'>Predicted House Price in 1990: ${today_prediction:,}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='font-size:24px;'>Predicted House Price in 2024: ${today_prediction:,}</p>", unsafe_allow_html=True)
 
 
     # Display house style based on the house age
