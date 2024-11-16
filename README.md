@@ -65,16 +65,16 @@ The app prompts the user for the following inputs:
 These inputs are then processed and scaled before being fed into the model for prediction.
 
 Output
-    - The app displays the predicted housing price as a non-negative, rounded value to make it more interpretable.
-    - Example output:
+- The app displays the predicted housing price as a non-negative, rounded value to make it more interpretable.
+- Example output:
       ```
       Predicted House Price: $350,000
       ```
  Model and Data Preparation
-    - The model was trained using the **California housing dataset**.
-    - Data was preprocessed using `StandardScaler` to normalize both the input features and target variable, ensuring effective model performance.
+- The model was trained using the **California housing dataset**.
+- Data was preprocessed using `StandardScaler` to normalize both the input features and target variable, ensuring effective model performance.
 
 Notes
-    - Ensure that the `model.keras` and `scaler` files are in the correct format and placed in the working directory.
-    - The prediction model is optimized for the columns mentioned and may not generalize to other datasets without retraining.
+- Ensure that the `model.keras` and `scaler` files are in the correct format and placed in the working directory.
+- The prediction model is optimized for the columns mentioned and may not generalize to other datasets without retraining.
     """)
