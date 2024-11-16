@@ -29,7 +29,7 @@ team_data = [
 for member in team_data:
     col1, col2 = st.columns([1, 2])  # Adjust column ratio to make images larger
     with col1:
-        st.image(member["image"], use_column_width=True)  # Larger image size
+        st.image(member["image"], use_container_width=True)  # Larger image size
     with col2:
         st.subheader(member["name"])
         st.write(member["Section"])
