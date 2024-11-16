@@ -8,13 +8,13 @@ import pickle
 def run_simulation():
     st.markdown(f"The tensfor flow version is {(tf.__version__)}")
     # Load the trained Keras model
-    model = tf.keras.models.load_model('model1.keras')
+    model = tf.keras.models.load_model('IndProject/model1.keras')
 
     # Load the scalers
-    with open('scaler_y.pkl', 'rb') as file:
+    with open('IndProject/scaler_y.pkl', 'rb') as file:
         scaler_y = pickle.load(file)
 
-    with open('scaler_x.pkl', 'rb') as file:
+    with open('IndProject/scaler_x.pkl', 'rb') as file:
         scaler_x = pickle.load(file)
 
     # Streamlit app setup
@@ -58,13 +58,13 @@ def run_simulation():
 
     # Display house style based on the house age
     if house_age < 10:
-        st.image('modern_house.jpeg')  # Replace with the path to the modern house image
+        st.image('IndProject/modern_house.jpeg')  # Replace with the path to the modern house image
         st.write("Almost brand new house")
     elif 10 <= house_age <= 35:
-        st.image('mid_modern_house.jpg')  # Replace with the path to the mid-modern house image
+        st.image('IndProject/mid_modern_house.jpg')  # Replace with the path to the mid-modern house image
         st.write("Not too old, not too new")
     else:
-        st.image('old_house.jpg')  # Replace with the path to the old house image
+        st.image('IndProject/old_house.jpg')  # Replace with the path to the old house image
         st.write("Are you into old haunted houses?")
 
 if __name__ == '__main__':
