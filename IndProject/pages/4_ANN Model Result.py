@@ -8,11 +8,18 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, mean_absolu
 def ann_model_result():
     st.header("Overall Insights")
     st.markdown("""
+    - In general, variables such as house age and number of rooms (house traits) play a particular role in the prediction, since the relationship fluctuates a lot. 
+        - A house with 1 room is predicted at higher price than one of 4 rooms, but similar to one of more than 6 rooms (ceteris paribus).
+        - A "new" house (low age) is not as valuable as an old house, ceteris paribus.
+    - Variables such as Median Income and Population in the block play a key combination of impact, since a highly populated place with low median income, tends to lower the price for the house (high density-low income).
+    - Similarly, "equal" values of Income and Population tend to be in a limbo when they are middle value (maybe, middle density-middle income).
+    - High income, low population increase house price (ceteris paribus).
     - The Training and Validation loss graphs shows that overfitting was prevented before running 40 epochs.
     - The number of hidden layer nodes can influence forecasting power, but increasing this will harm computational power.
     - Error Metrics show a solid model and no overfitting, but still with room for improvement.
     - Improvements:
         - Add other categorical features such as location to improve forecasting power.
+        - Maybe consider crossing Income and Population as one variable to see density vs. income effect
         - Add other numeric features such as number of floors.
     """)
     # Subheader for the loss plot
