@@ -10,7 +10,7 @@ def ann_model_result():
     st.markdown("""
     - The Training and Validation loss graphs shows that overfitting was prevented before running 40 epochs.
     - The number of hidden layer nodes can influence forecasting power, but increasing this will harm computational power.
-    - Error Metrics show a solid model, but still with room for improvement.
+    - Error Metrics show a solid model and no overfitting, but still with room for improvement.
     - Improvements:
         - Add other categorical features such as location to improve forecasting power.
         - Add other numeric features such as number of floors.
