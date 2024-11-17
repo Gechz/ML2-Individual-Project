@@ -22,7 +22,9 @@ def run_simulation():
 
     # User input for the X features based on the data columns
     st.markdown("""
-    **Note**: `MedInc` has been converted to a nominal value (not thousands).
+    **Note**:
+    - `MedInc` has been converted to a nominal value (not thousands).
+    - Result is in nominal values. While original dataset stored the median value of the house in California house districts, we will assume the value predicted will refer to a single house value based on its own and the block's characteristic. 
     """)
     
     med_inc = st.number_input('Median Income (nominal) in the Block Group', min_value=500.0, max_value=20000.0, step=1000.0, format="%.1f")
