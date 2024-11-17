@@ -42,6 +42,7 @@ def eda_page():
         - `Latitude`: Block group latitude
         - `Longitude`: Block group longitude
     - **Missing Attribute Values**: None
+    - **Target Variable**: Median House Values in California District. 
     """)
     st.subheader("Data Preparation")
     st.markdown("""
